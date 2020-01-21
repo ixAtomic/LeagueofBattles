@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friends List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="topnav">
+		<ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Main.html">Roster</a></li>
+			<li><a href="createTeam.html">Create Team</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="Ladder.html">Ladder</a></li>
+			<li><a href="friendsList.html">Friends List</a></li>
+			<li><a>Leagues</a></li>
+		</ul>
+	</div>
+	<div>
+		<input type="text" placeholder="Search" id = "userField">
+		<button id="findUser">Add Friend</button>
+	</div>
+
+	<div>
+		<button id="displayRequestsButton">Requests</button>
+		
+		<ul id="friendList">
+			
+		</ul>
+	</div>
+
+
+
+	<div class="friendsListDiv">
+		<h4>Friends List</h4>
+		<ul id="viewFriends">
+			
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+
+
+
+	<script>
+  		// Your web app's Firebase configuration
+  		var firebaseConfig = {
+    		apiKey: "AIzaSyDSsavxdk4ltNuxzOhxD3UL0QCmsHbPBsk",
+    		authDomain: "leagueofbattles-61fe0.firebaseapp.com",
+    		databaseURL: "https://leagueofbattles-61fe0.firebaseio.com",
+    		projectId: "leagueofbattles-61fe0",
+    		storageBucket: "leagueofbattles-61fe0.appspot.com",
+    		messagingSenderId: "975682921475",
+    		appId: "1:975682921475:web:80332f00688cbadac65a36",
+    		measurementId: "G-8T33MWSKZ5"
+  		};
+ 	 	// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+  		firebase.analytics();
+  		firebase.auth;
+  		firebase.database;
+  		firebase.database.DataSnapshot;
+  		firebase.database.Query;
+  		var theData = firebase.database();
+	</script>
+
+	<script src="js/friendsList.js"></script>
+
+</body>
+</html>

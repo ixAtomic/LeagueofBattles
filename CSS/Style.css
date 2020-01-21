@@ -1,0 +1,153 @@
+
+*{margin: 0; padding: 0}
+.Roster{
+	position: relative;
+	border: 1px solid black;
+	width: 40%;
+	margin-left: 10%;
+	margin-bottom: 30px;
+}
+
+.list_buttons{
+	display:inline-block;
+
+}
+
+.thePlayers{
+		display:inline-block;
+		width: 70%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li{
+	padding: 8px 16px;
+}
+
+.Bench{
+	position: relative;
+	border: 1px solid black;
+	width: 40%;
+	margin-left: 10%;
+}
+
+.benchButtons{
+	display:inline-block;
+
+}
+
+.benchPlayers{
+		display:inline-block;
+		width: 70%;
+}
+
+
+
+
+.topnav a:hover{
+	text-decoration: underline;
+}
+
+.topnav a:active{
+	color:4CAF50;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: black;
+}
+
+.topnav ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	text-align: center;
+	
+}
+
+.topnav li{
+	display: inline;
+}
+
+.topnav a{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+section{
+	background-image: url("../Photos/gameover.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	height: 1280px;
+	margin: 0px;
+	padding: 0px;
+}
+
+section div{
+	background-color: black;
+	margin: 5px;
+	width: 300px;
+	color: white;
+}
+
+.tournaments{
+	opacity: .98;
+	margin-left: 40px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 5px;
+}
+
+.ladder{
+	opacity: .98;
+	margin-right: 40px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 5px;
+}
+
+.main{
+	margin-left: 15px;
+	margin-right: 15px; 
+	background: none;
+	flex-grow: 1;
+}
+
+footer{
+	background-color: black; 
+	color: white;
+}
+
+.tournamentHeader{
+	text-align: center;
+
+}
+
+.ladderHeader{
+	text-align: center;
+}
+
+.mainHeader{
+	text-align: center;
+}
+
+.friendsListDiv{
+	margin: 15%;
+	margin-top: 10%;
+	
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
+
+.viewFriends{
+
+}

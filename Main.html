@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="heroPic">
+
+	</div>
+
+	<div class="topnav">
+		<ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="Main.html">Roster</a></li>
+			<li><a href="createTeam.html">Create Team</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="Ladder.html">Ladder</a></li>
+			<li><a href="friendsList.html">Friends List</a></li>
+			<li><a>Leagues</a></li>
+		</ul>
+	</div>
+
+	<select id="teamSelect">
+  		<option>None</option>
+  		<option id="option1"></option>
+  		<option id="option2"></option>
+  		<option id="option3"></option>
+  		<option id="option4"></option>
+	</select>
+
+	<input type="text" placeholder="Summoner" id = "summonerField">
+	<button id="addPlayer">Add Player</button>
+
+	
+	
+	<table class="Roster">
+		<div class="thePlayers">
+			<tr>
+				<th>Summoner Name</th>
+				<th>Position</th>
+				<th>Role</th>
+			</tr>
+			<tr>
+				<td id="P1"><a></a></td>
+				<td><button id="button1" class="moveButtons" onclick="swapFunction('P1')">Move</button></td>
+				<td><a>Top</a></td>
+			</tr>
+			<tr>
+				<td id="P2"><a></a></td>
+				<td><button id="button2" class="moveButtons" onclick="swapFunction('P2')">Move</button></td>
+				<td><a>Jungle</a></td>
+			</tr>
+			<tr>
+				<td id="P3"><a></a></td>
+				<td><button id="button3" class="moveButtons" onclick="swapFunction('P3')">Move</button></td>
+				<td><a>Mid</a></td>
+			</tr>
+			<tr>
+				<td id="P4"><a></a></td>
+				<td><button id="button4" class="moveButtons" onclick="swapFunction('P4')">Move</button></td>
+				<td><a>Bot</a></td>
+			</tr>
+			<tr>
+				<td id="P5"><a></a></td>
+				<td><button id="button5" class="moveButtons" onclick="swapFunction('P5')">Move</button></td>
+				<td><a>Support</a></td>
+			</tr>
+		</div>
+	</table>
+
+	<table id="benchID" class="Bench">
+		<div class="benchPlayers">
+			<tr>
+				<th>Summoner Name</th>
+				<th>Position</th>
+			</tr>
+			
+		</div>
+
+	</table>
+
+	<input type="text" placeholder="name" id = "nameField">
+	<input type="text" placeholder="age" id="ageField">
+	<button id="submitButton">Submit</button>
+	<button id="saveButtonCall">Save</button>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+
+	<script>
+  		// Your web app's Firebase configuration
+  		var firebaseConfig = {
+    		apiKey: "AIzaSyDSsavxdk4ltNuxzOhxD3UL0QCmsHbPBsk",
+    		authDomain: "leagueofbattles-61fe0.firebaseapp.com",
+    		databaseURL: "https://leagueofbattles-61fe0.firebaseio.com",
+    		projectId: "leagueofbattles-61fe0",
+    		storageBucket: "leagueofbattles-61fe0.appspot.com",
+    		messagingSenderId: "975682921475",
+    		appId: "1:975682921475:web:80332f00688cbadac65a36",
+    		measurementId: "G-8T33MWSKZ5"
+  		};
+ 	 	// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+  		firebase.analytics();
+  		firebase.database;
+  		firebase.database.DataSnapshot;
+  		firebase.database.Query;
+  		var theData = firebase.database();
+	</script>
+
+	<script src="js/main.js"></script>
+	<!-- <script>dropDownTest();</script> -->
+	<script>getValue();</script>
+	<!-- <script>getIndex();</script>
+ -->
+</body>
+</html>

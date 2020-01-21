@@ -1,0 +1,50 @@
+*{margin: 0; padding: 0}
+body{
+	padding-top: 30vh;
+	background-image: url("../Photos/login2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.form-container{
+	color: white;
+	width: 360px;
+	height: auto;
+	padding: 30px 40px;
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #000;
+	margin: auto;
+}
+
+ul.login{
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.login li{
+	width: 360px;
+	margin-bottom: 10px;
+}
+
+ul.login li input{
+	width: 75%;
+	text-align: center;
+	padding: 15px 0px;
+	background-color: #d3d3d3;
+	border: none;
+	border-radius: 5px;
+}
+
+ul.login li button{
+	background-color: black;
+	color: black;
+
+	width: 75%;
+	text-align: center;
+	padding: 15px 0px;
+	
+	color: #fff;
+	border-radius: 5px;
+}
