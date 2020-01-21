@@ -31,7 +31,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 	}
 });
 
-
+//sends a friend request
 function addFriend(theID){
 	var friendReff = theData.ref("User");
 	var newFriendRequestKey = firebase.database().ref().child('Pending').push().key;
@@ -52,6 +52,7 @@ function addFriend(theID){
     });
 }
 
+//displays user friend requests
 var count = 0;
 function displayRequests(theID){
 	var requestRef = theData.ref("User/" + theID + "/" + "Pending");
@@ -96,6 +97,7 @@ function displayRequests(theID){
 	});
 	}
 	else{
+		//remove children to close list
 		for(var i = 0; i < count; i++){
 			ul.removeChild(ul.childNodes[1]);
 			ul.removeChild(ul.childNodes[1]);
@@ -108,7 +110,7 @@ function displayRequests(theID){
 
 
 
-
+//accepts a user request and adds as friend to the users friend list
 function acceptRequest(theSummonerName, theAcceptID, theAcceptSummoner){
 	var acceptRef = theData.ref("User/" + theSummonerName + "/" + "Friends/" + theAcceptID)
 	acceptRef.update({
@@ -128,7 +130,7 @@ function acceptRequest(theSummonerName, theAcceptID, theAcceptSummoner){
 	});
 }
 
-
+//deletes request from user
 function declineRequest(theSummonerName, theDeclineID){
 	var declineRef = theData.ref("User/" + theSummonerName + "/" + "Pending")
 	declineRef.on('value', function(snapshot) {
@@ -144,7 +146,7 @@ function declineRequest(theSummonerName, theDeclineID){
 	});
 }
 
-
+//dipslays users friends list
 function displayFriendsList(theID){
 	var listRef = theData.ref("User/" + theID + "/" + "Friends");
 

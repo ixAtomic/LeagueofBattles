@@ -21,6 +21,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
+//adds team to firebase database
 function createTeam(theID){
 theData.ref("Teams/" + document.getElementById("nameField").value).set({
       TeamName: document.getElementById("nameField").value,

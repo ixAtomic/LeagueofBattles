@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 
-
+//signs in a user
 function signIn(){
 	var email = document.getElementById("emailField").value;
 	var password = document.getElementById("pswdField").value;
@@ -33,7 +33,7 @@ function signIn(){
 	});
 }
 
-
+//calls sign up html doc
 function SignUp(){
   window.location.href = "newAcct.html";
 }

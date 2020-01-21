@@ -1,6 +1,7 @@
 var update = document.getElementById("updateProfile");
 var theUserName = document.getElementById("theUser");
 
+//checks login status
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -26,7 +27,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 
-
+//puts the ID into the list of users
 function updateSummoner(theID){
 	theData.ref("User/" + theID).set({
   			Summoner: document.getElementById("summonerField").value,

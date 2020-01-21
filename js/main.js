@@ -98,7 +98,7 @@ function dropDownSelection(theID){
     getValue(theTeam, theID);
 
 }
-
+//returns the current team
 function currentDropdownSelection(){
 	var dropdown = document.getElementById("teamSelect");
     var theSelection = dropdown.selectedIndex;
@@ -173,7 +173,7 @@ function getValue(theTeam, theID){
 
 
 
-
+//creates a button for dynamic use
 function createButton(iterator){
 	
 	
@@ -188,7 +188,7 @@ function createButton(iterator){
 
 
 
-
+//the number of players on a team for use
 function numPlayerSetter(numOfPlayers){
 	numPlayers = numOfPlayers;
 }
@@ -232,6 +232,7 @@ function clearRoster(){
 var count = 0;
 var left;
 var right;
+//swaps two users between two different table positions
 function swapFunction(playerval){
 
 	playerchange = playerval;
@@ -280,7 +281,7 @@ function saveButton(theID){
 }
 
 
-
+//gets current teams indexval for player organization
 function getIndex(theID){
   	var theTeam = currentDropdownSelection();
   	theData.ref("Teams/" + theTeam + "/" + "Index/Index").on('value', function(snapshot){
@@ -289,13 +290,14 @@ function getIndex(theID){
   	});
 }
 
-
+//sets indexval for global use
 function indexFunction(value){
 	indexval = value;
 	//console.log(indexval);
 
 }
 
+//current data testing for roster functionality. shouldnt be necessary once adding a user is fully functional
 function writeData(theTeam, theID){
   		console.log(indexval);
   		theData.ref("Teams/" + theTeam + "/" + "player/" + document.getElementById("nameField").value).set({
@@ -306,6 +308,7 @@ function writeData(theTeam, theID){
   		updateIndex(indexval++, theID); 		
 }
 
+//updates the indexval in firebase
 function updateIndex(newIndex, theID){
 	currentTeam = currentDropdownSelection();
 	theData.ref("Teams/" + currentTeam + "/" + "Index").set({
@@ -313,7 +316,7 @@ function updateIndex(newIndex, theID){
 	});
 }
 
-
+//sends a team up request to another user
 function sendTeamRequest(theID){
 	var TeamRef = theData.ref("User");
 	var newTeamRequestKey = firebase.database().ref().child('Pending').push().key;

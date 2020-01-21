@@ -1,4 +1,4 @@
-
+//creates new user
 function signUp(){
 	var email = document.getElementById("emailField").value;
 	var password = document.getElementById("pswdField").value;
