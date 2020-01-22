@@ -10,7 +10,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     if(user != null){
     	var email_id = user.email;       
-      window.location.href = "Home.html";
+      window.location.href = "Index.html";
     }
 
 
