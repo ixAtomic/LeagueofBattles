@@ -1,5 +1,5 @@
-*{margin: 0; padding: 0}
-body{
+/* *{margin: 0; padding: 0} */
+#loginbody{
 	padding-top: 30vh;
 	background-image: url("../Photos/login2.jpg");
 	background-size: cover;
@@ -8,6 +8,8 @@ body{
 }
 
 .form-container{
+	margin: 0;
+	padding: 0;
 	color: white;
 	width: 360px;
 	height: auto;
@@ -19,6 +21,8 @@ body{
 }
 
 ul.login{
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 	text-align: center;
 }
@@ -48,3 +52,8 @@ ul.login li button{
 	color: #fff;
 	border-radius: 5px;
 }
+
+#viewFriends{
+	list-style-type: none;
+}
+

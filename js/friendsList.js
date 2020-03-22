@@ -57,7 +57,8 @@ var count = 0;
 function displayRequests(theID){
 	var requestRef = theData.ref("User/" + theID + "/" + "Pending");
 	
-	var ul = document.getElementById("friendList");
+	//var ul = document.getElementById("friendList");
+	var ul = $("friendsList");
 	var n = 1;
 	if(count == 0){
 		requestRef.on('value', function(snapshot){

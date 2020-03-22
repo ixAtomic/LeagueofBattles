@@ -3,93 +3,100 @@
 <html>
 <head>
 	<title>Home Page</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="../LeaguesWebsite/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css"> 
 </head>
-<body>
+<body id="indexBody">
 	<div class="heroPic"></div>
-	<div class="topnav">
-		<ul>
-			<li><a href="Index.html">Home</a></li>
-			<li><a href="Main.html">Roster</a></li>
-			<li><a href="createTeam.html">Create Team</a></li>
-			<li><a href="profile.html">Profile</a></li>
-			<li><a href="Ladder.html">Ladder</a></li>
-			<li><a href="friendsList.html">Friends List</a></li>
-			<li><a>Leagues</a></li>
+	<div class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="Index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Main.html">Roster</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="createTeam.html">Create Team</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Ladder.html">Ladder</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="friendsList.html">Friends List</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Leagues</a>
+			</li>
 		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Profile</button>
+		</form>
 	</div>
 
-	<section>
-		<div class="tournaments">
-			<h2 class="tournamentHeader">Tournaments</h2>
-			
-			<ul>
-				<li>L1</li>
-				<li>L2</li>
-				<li>L3</li>
-				<li>L4</li>
-				<li>L5</li>
-				<li>L6</li>
-				<li>L7</li>
-				<li>L8</li>
-				<li>L9</li>
-				<li>L10</li>
-			</ul>
+
+	</div>
+		<div class="container-fluid" style="background-color: lightgray;">
+			<div class="row justify-content-center" style="background-color: lightgray;">
+				<div class="col-2 vh-100 justify-content-center container" style="background-color: red;">
+					<div>
+						<h2>Tournaments</h2>
+						<ol>
+							<li>L1</li>
+							<li>L2</li>
+							<li>L3</li>
+							<li>L4</li>
+							<li>L5</li>
+							<li>L6</li>
+							<li>L7</li>
+							<li>L8</li>
+							<li>L9</li>
+							<li>L10</li>
+						</ol>
+					</div>
+				</div>				
+				<div class="col-8 justify-content-center container" style="background-color: blue;">
+					<div><h2>Main</h2></div>
+				</div>
+				<div class="col-2 justify-content-center container" style="background-color: green;">
+					<div class="ladder">
+						<div>
+							<h2>General Ladder</h2>
+							<ol>
+								<li>L1</li>
+								<li>L2</li>
+								<li>L3</li>
+								<li>L4</li>
+								<li>L5</li>
+								<li>L6</li>
+								<li>L7</li>
+								<li>L8</li>
+								<li>L9</li>
+								<li>L10</li>
+							</ol>
+						</div>
+					</div>	
+				</div>				
+			</div>
 		</div>
-		<div class="main"><h2 class="mainHeader">Main</h2></div>
-		<div class="ladder">
-			<h2 class="ladderHeader">General Ladder</h2>
-			<ul>
-				<li>L1</li>
-				<li>L2</li>
-				<li>L3</li>
-				<li>L4</li>
-				<li>L5</li>
-				<li>L6</li>
-				<li>L7</li>
-				<li>L8</li>
-				<li>L9</li>
-				<li>L10</li>
-			</ul>
-		</div>
-	</section>
+	</div>
 	
 	
 	<button onclick="logOut()">Log Out</button>
 
 	<footer>footer</footer>
 
-
+	<script src="jquery-3.4.1.js"></script>
+	<script src="popper.min.js"></script>
+	<script src="../LeaguesWebsite/bootstrap/js/bootstrap.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
-
-
-
-	<script>
-  		// Your web app's Firebase configuration
-  		var firebaseConfig = {
-    		apiKey: "AIzaSyDSsavxdk4ltNuxzOhxD3UL0QCmsHbPBsk",
-    		authDomain: "leagueofbattles-61fe0.firebaseapp.com",
-    		databaseURL: "https://leagueofbattles-61fe0.firebaseio.com",
-    		projectId: "leagueofbattles-61fe0",
-    		storageBucket: "leagueofbattles-61fe0.appspot.com",
-    		messagingSenderId: "975682921475",
-    		appId: "1:975682921475:web:80332f00688cbadac65a36",
-    		measurementId: "G-8T33MWSKZ5"
-  		};
- 	 	// Initialize Firebase
-  		firebase.initializeApp(firebaseConfig);
-  		firebase.analytics();
-  		firebase.auth;
-  		firebase.database;
-  		firebase.database.DataSnapshot;
-  		firebase.database.Query;
-  		var theData = firebase.database();
-	</script>
-
-
+	<script src="Firebase.js"></script>
 	<script src="js/Home.js"></script>
 </body>
 </html>
