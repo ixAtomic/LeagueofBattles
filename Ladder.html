@@ -3,21 +3,48 @@
 <html>
 <head>
 	<title>Ladder</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="../LeaguesWebsite/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-	<div class="topnav">
-		<ul>
-			<li><a href="Index.html">Home</a></li>
-			<li><a href="Main.html">Roster</a></li>
-			<li><a href="createTeam.html">Create Team</a></li>
-			<li><a href="profile.html">Profile</a></li>
-			<li><a href="Ladder.html">Ladder</a></li>
-			<li><a href="friendsList.html">Friends List</a></li>
-			<li><a>Leagues</a></li>
+	<div class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="Index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Main.html">Roster</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="createTeam.html">Create Team</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="profile.html">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Ladder.html">Ladder</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="friendsList.html">Friends List</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Leagues</a>
+			</li>
 		</ul>
+		<form class="form-inline my-2 my-lg-0 dropleft">
+			<button class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" type="submit">Profile</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Profile</a>
+				<a class="dropdown-item" href="#">Requests</a>
+				<a class="dropdown-item" href="#">Something</a>
+				<button class="dropdown-item logOut">Log Out</button>
+			</div>
+		</form>
 	</div>
 	<p>this is the Ladder page</p>
 
+	<script src="jquery-3.4.1.js"></script>
+	<script src="popper.min.js"></script>
+	<script src="../LeaguesWebsite/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/Utility.js"></script>
 </body>
 </html>

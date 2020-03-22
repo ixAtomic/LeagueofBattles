@@ -32,13 +32,15 @@
 				<a class="nav-link">Leagues</a>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Profile</button>
+		<form class="form-inline my-2 my-lg-0 dropleft">
+			<button class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" type="submit">Profile</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Profile</a>
+				<a class="dropdown-item" href="#">Requests</a>
+				<a class="dropdown-item" href="#">Something</a>
+				<button class="dropdown-item logOut">Log Out</button>
+			</div>
 		</form>
-	</div>
-	<div class="form-group">
-		<input type="text" placeholder="Search" id = "userField">
-		<button id="findUser">Add Friend</button>
 	</div>
 
 	<div class="container sm">
@@ -99,6 +101,7 @@
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
 	<script src="Firebase.js"></script>
 	<script src="js/friendsList.js"></script>
+	<script src="js/Utility.js"></script>
 
 </body>
 </html>

@@ -32,18 +32,42 @@
 				<a class="nav-link">Leagues</a>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Profile</button>
+		<form class="form-inline my-2 my-lg-0 dropleft">
+			<button class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle" id="dropdownProfile" data-toggle="dropdown" type="submit">Profile</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Profile</a>
+				<a class="dropdown-item" href="#">Requests</a>
+				<a class="dropdown-item" href="#">Something</a>
+				<button class="dropdown-item logOut">Log Out</button>
+			</div>
 		</form>
 	</div>
 
 
 	</div>
-		<div class="container-fluid" style="background-color: lightgray;">
+		<div class="container-fluid pt-2" style="background-color: blue;">
 			<div class="row justify-content-center" style="background-color: lightgray;">
 				<div class="col-2 vh-100 justify-content-center container" style="background-color: red;">
-					<div>
-						<h2>Tournaments</h2>
+					<div style="background-color: purple;">
+						<h2 class="text-center">Tournaments</h2>
+						<ol>
+							<li>L1</li>
+							<li>L2</li>
+							<li>L3</li>
+							<li>L4</li>
+							<li>L5</li>
+							<li>L6</li>
+							<li>L7</li>
+							<li>L8</li>
+							<li>L9</li>
+							<li>L10</li>
+						</ol>
+					</div>
+
+					<hr>
+
+					<div style="background-color: pink;">
+						<h2 class="text-center">Leagues</h2>
 						<ol>
 							<li>L1</li>
 							<li>L2</li>
@@ -59,12 +83,13 @@
 					</div>
 				</div>				
 				<div class="col-8 justify-content-center container" style="background-color: blue;">
-					<div><h2>Main</h2></div>
+					<div><h2 class="text-center">Main</h2></div>
 				</div>
 				<div class="col-2 justify-content-center container" style="background-color: green;">
 					<div class="ladder">
 						<div>
-							<h2>General Ladder</h2>
+							<h2 class="text-center">General Ladder</h2>
+							<h4>Rank:</h4>
 							<ol>
 								<li>L1</li>
 								<li>L2</li>
@@ -78,6 +103,23 @@
 								<li>L10</li>
 							</ol>
 						</div>
+				
+							<hr>
+						<div>
+							<h2 class="text-center">Current Teams</h2>
+							<ul id="currentTeams">
+								<li><a href="#">L1</a></li>
+								<li><a href="#">L2</a></li>
+								<li><a href="#">L3</a></li>
+								<li><a href="#">L4</a></li>
+								<li><a href="#">L5</a></li>
+								<li><a href="#">L6</a></li>
+								<li><a href="#">L7</a></li>
+								<li><a href="#">L8</a></li>
+								<li><a href="#">L9</a></li>
+								<li><a href="#">L10</a></li>
+							</ul>
+						</div>
 					</div>	
 				</div>				
 			</div>
@@ -85,8 +127,6 @@
 	</div>
 	
 	
-	<button onclick="logOut()">Log Out</button>
-
 	<footer>footer</footer>
 
 	<script src="jquery-3.4.1.js"></script>
@@ -98,5 +138,6 @@
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
 	<script src="Firebase.js"></script>
 	<script src="js/Home.js"></script>
+	<script src="js/Utility.js"></script>
 </body>
 </html>

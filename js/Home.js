@@ -1,5 +1,4 @@
 
-
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -16,8 +15,5 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-//logs out user
-function logOut(){
-	firebase.auth().signOut()
-	window.location.href = "logIn.html";
-}
+
+
