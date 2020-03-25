@@ -145,14 +145,29 @@ function getValue(theTeam, theID){
 				td1.setAttribute("id", ('P' + i));
 				td1.setAttribute("class", "leagueData");
 
-				var playerName = document.createTextNode(data.key);
+				var td2 = document.createElement('td');
+				td2.setAttribute("id", ('tableButton' + i));
+				td2.setAttribute("class", "leagueData");
 
-				td1.appendChild(playerName);
+				var td3 = document.createElement('td');
+				td3.setAttribute("id", ('Role' + i));
+				td3.setAttribute("class", "leagueData");
+
+				var playerName = document.createTextNode(data.key);
+				var button = createButton(i);
+				var Role = document.createTextNode("Role");
+				td1.appendChild(playerName);	
+				td2.appendChild(button);
+				td3.appendChild(Role);
 				
 				tr.appendChild(td1);
-				tr.appendChild(createButton(i));
+				tr.appendChild(td2);
+				tr.appendChild(td3);
+				
 
+				
 				table.appendChild(tr);
+
 
 
 				// var li = document.createElement("li");
