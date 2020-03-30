@@ -13,7 +13,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     var uid = user.uid;
     var providerData = user.providerData;
     // ...
-
+    document.getElementById("logButton").innerHTML = "Sign out";
     theUserName.innerHTML = email;
 
     update.onclick = function(){
@@ -23,6 +23,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   } else {
     // User is signed out.
     // ...
+    document.getElementById("logButton").innerHTML = "Sign in";
   }
 });
 

@@ -61,3 +61,18 @@ ul.login li button{
 	list-style-type: none;
 }
 
+.avatar{
+
+	vertical-align: middle;
+ 	width: 168px;
+  	height: 168px;
+  	border-radius: 50%;
+}
+
+#emailField{
+	margin: 0 auto;
+}
+
+#pswdField{
+	margin: 0 auto;
+}

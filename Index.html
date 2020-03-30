@@ -40,9 +40,38 @@
 				<a class="dropdown-item" href="#">Profile</a>
 				<a class="dropdown-item" href="#">Requests</a>
 				<a class="dropdown-item" href="#">Something</a>
-				<button class="dropdown-item logOut">Log Out</button>
-			</div>
+				<button class="dropdown-item sign">Sign in</button>
+			</div>			
 		</form>
+	</div>
+
+	<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row pb-4">
+						<input class="py-1 px-3" type="text" placeholder="Email" id = "emailField">
+					</div>
+					<div class="row">
+						<input class="py-1 px-3 ml-auto" type="Password" placeholder="Password" id="pswdField">
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-primary signIn" data-dismiss="modal">Sign in</button>
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
 	</div>
 
 
@@ -139,7 +168,6 @@
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
 	<script src="Firebase.js"></script>
-	<script src="js/Home.js"></script>
 	<script src="js/Utility.js"></script>
 </body>
 </html>

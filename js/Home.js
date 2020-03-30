@@ -6,7 +6,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     var email = user.email;
     var isAnonymous = user.isAnonymous;
     var uid = user.uid;  
-    document.getElementById("user").innerHTML = email;
 
     // ...
   } else {
